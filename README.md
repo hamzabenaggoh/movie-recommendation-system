@@ -6,10 +6,11 @@ To request data make an HTTP GET request to the endpoint that the microservice i
 Specifically you want to include a query parameter in the GET request that corresponds to a movie title.
 In the example below the microservice is listening on port 8012:
 
-
-URL = "http://localhost:8012/recommend"<br>
-params = {'movie_title': movie_title}<br>
-response = requests.get(URL, params=params)<br>
+'''
+URL = "http://localhost:8012/recommend"
+params = {'movie_title': movie_title}
+response = requests.get(URL, params=params)
+'''
 
 
 The url this corresponds to assuming Batman is the movie_title: http://localhost:8012/recommend?movie_title=Batman
@@ -21,12 +22,13 @@ you passed in the get request. Since the microservice is listening to your reque
 as soon as it receives a request it sends a json response back containing the 3 movie recommendations. In order to receive the 
 data you must parse the JSON response like so:
 
-if response.status_code == 200:<br>
-        data = response.json()<br>
-        recommendations = data["recommendations"]<br>
-    else:<br>
-        print("Error: ", response.status_code)<br>
-
+'''
+if response.status_code == 200:
+        data = response.json()
+        recommendations = data["recommendations"]
+    else:
+        print("Error: ", response.status_code)
+'''
 
 UML Sequence Diagram<br>
 
