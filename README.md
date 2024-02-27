@@ -28,6 +28,8 @@ if response.status_code == 200:
         print("Error: ", response.status_code)
 
 
-UML Sequence Diagram
+UML Sequence Diagram<br>
+
+
 <img width="331" alt="Screenshot 2024-02-26 at 7 08 11 PM" src="https://github.com/hamzabenaggoh/movie-recommendation-system/assets/54951481/ad0a721f-04a0-4ec3-864a-3a89fd5d24d2">
 
